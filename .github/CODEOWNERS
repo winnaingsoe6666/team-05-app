@@ -1,0 +1,25 @@
+# CODEOWNERS — auto-requests a reviewer when a PR touches matching paths.
+# Team: Win Naing Soe, ting (Htet Aung Hlaing), Samuel Bawi Nei Lian
+#
+# Syntax: <path>   <@owner> [<@owner2> ...]
+# More specific lines win. Every PR still needs 1 approval from a non-author.
+
+# Default owner for everything (fallback)
+*                       @winnaingsoe6666 @vibecode-ting @Samm24TT
+
+# Frontend — all
+/apps/web/              @winnaingsoe6666 @vibecode-ting @Samm24TT
+
+# Backend — all
+/apps/api/              @winnaingsoe6666 @vibecode-ting @Samm24TT
+
+# Shared packages — all
+/packages/              @winnaingsoe6666 @vibecode-ting @Samm24TT
+
+# Infrastructure — Win Naing Soe only
+/docker-compose.yml     @winnaingsoe6666
+/.github/               @winnaingsoe6666
+
+# Documentation — Win Naing Soe + Samuel
+/docs/                  @winnaingsoe6666 @Samm24TT
+*.md                    @winnaingsoe6666 @Samm24TT
